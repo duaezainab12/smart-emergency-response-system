@@ -1,4 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'dart:ui';
 
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _plugin =
@@ -53,7 +54,7 @@ class NotificationService {
           importance: Importance.max,
           priority: Priority.high,
           icon: '@mipmap/ic_launcher',
-          color: const Color(0xFFD32F2F),
+          color: Colors.red,
           ticker: 'Emergency Alert',
         ),
       ),
